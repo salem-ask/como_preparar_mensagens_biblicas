@@ -2,6 +2,7 @@
 
 DirectoryIndex index.html
 Options -Indexes
+AddType video/mp4 .mp4
 
 # Browser cache: images rarely change, the settings file (prices, pixel) may change any day
 <IfModule mod_expires.c>
@@ -9,6 +10,7 @@ Options -Indexes
   ExpiresDefault "access plus 0 seconds"
   ExpiresByType image/webp "access plus 30 days"
   ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType video/mp4 "access plus 7 days"
   ExpiresByType text/css "access plus 1 day"
   ExpiresByType application/javascript "access plus 10 minutes"
   ExpiresByType text/javascript "access plus 10 minutes"

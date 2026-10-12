@@ -31,7 +31,7 @@
   <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
   <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.3 7.5L3.5 20.5l1.5-4.4a8.4 8.4 0 1 1 15.5-4.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.3 8.2c-.5 0-.9.4-.9 1 0 3 3.4 6.4 6.4 6.4.6 0 1-.4 1-.9v-1.2l-1.9-.8-.9.9c-1.1-.5-2.1-1.5-2.6-2.6l.9-.9-.8-1.9H9.3Z" fill="currentColor"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-books" viewBox="0 0 24 24"><path d="M4 4.5h3.6v15H4zM9.6 4.5h3.6v15H9.6zM15.3 5.4l3.4-.9 3.3 14.4-3.4.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M2.5 19.5h19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.3v7.4l5.8-3.7z" fill="currentColor"/></symbol>
   <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16v4Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m13.5 6.5 4 4" stroke="currentColor" stroke-width="2"/></symbol>
   <symbol id="i-book" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#173a30"/><path d="M6.5 10.5c3.2-1.4 6.4-1.3 9.5.5v12c-3.1-1.8-6.3-1.9-9.5-.5zM25.5 10.5c-3.2-1.4-6.4-1.3-9.5.5v12c3.1-1.8 6.3-1.9 9.5-.5z" fill="none" stroke="#fbf6e8" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 26.5h14" stroke="#f2c14e" stroke-width="1.8" stroke-linecap="round"/></symbol>
 </svg>
@@ -328,7 +328,10 @@
       <p class="eyebrow">Estamos aqui para ajudar</p>
       <h2 class="section-title" id="help-title">Não sabe como pagar? Tem receio de burlas na internet?</h2>
       <p class="lead">Compreendemos. Envie-nos uma mensagem por WhatsApp antes de pagar. Uma pessoa real da Library Online responde às suas perguntas e acompanha-o no pagamento, passo a passo.</p>
-      <a class="btn btn-whatsapp" href="https://wa.me/243823226790" data-whatsapp="Olá Library Online, tenho uma pergunta sobre o livro Como Preparar Mensagens Bíblicas." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Fale connosco no WhatsApp</a>
+      <div class="help-actions">
+        <a class="btn btn-whatsapp" href="https://wa.me/243823226790" data-whatsapp="Olá Library Online, tenho uma pergunta sobre o livro Como Preparar Mensagens Bíblicas." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Fale connosco no WhatsApp</a>
+        <a class="btn btn-outline" href="#como-pagar"><svg aria-hidden="true"><use href="#i-play"/></svg>Ver o vídeo: como pagar</a>
+      </div>
       <p class="help-contact">Prefere e-mail? Escreva para <a href="mailto:libraryonline65@gmail.com" data-email>libraryonline65@gmail.com</a></p>
     </div>
   </section>
@@ -347,7 +350,7 @@
         </details>
         <details>
           <summary>Como posso pagar?</summary>
-          <div class="faq-answer"><p>Com Mobile Money ou cartão bancário. Pode pagar a partir de Angola, Moçambique, Portugal, Brasil, Cabo Verde e de muitos outros países.</p></div>
+          <div class="faq-answer"><p>Com Mobile Money ou cartão bancário. Pode pagar a partir de Angola, Moçambique, Portugal, Brasil, Cabo Verde e de muitos outros países. No fim desta página, um <a href="#como-pagar">vídeo de 1 minuto</a> mostra o pagamento passo a passo.</p></div>
         </details>
         <details>
           <summary>Tenho de pagar em dólares?</summary>
@@ -419,15 +422,54 @@
     </div>
   </section>
 
-  <!-- Free books group: a soft exit for visitors who are not ready to buy -->
-  <section class="section group" aria-labelledby="group-title">
-    <div class="wrap narrow group-box">
-      <span class="group-mark" aria-hidden="true"><svg><use href="#i-books"/></svg></span>
-      <div class="flow">
-        <p class="eyebrow">Livros cristãos gratuitos</p>
-        <h2 class="section-title" id="group-title">Junte-se ao nosso grupo de WhatsApp e receba livros cristãos gratuitos</h2>
-        <p class="lead">Os membros recebem livros cristãos gratuitos para ler no telemóvel, além de novidades sobre os nossos novos títulos. A adesão é gratuita.</p>
-        <a class="btn btn-whatsapp" href="https://chat.whatsapp.com/DRFUqxZkOjX3fzXEaGObV3?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4" data-link="whatsappGroupUrl" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Entrar no grupo gratuito</a>
+  <!-- How to pay: the step-by-step video -->
+  <section class="section howto" id="como-pagar" aria-labelledby="howto-title">
+    <div class="wrap howto-grid">
+      <div class="howto-head flow">
+        <p class="eyebrow">Pagamento passo a passo</p>
+        <h2 class="section-title" id="howto-title">Como pagar? Veja o passo a passo em 1 minuto</h2>
+        <p class="lead">Do formulário até ao download do livro, este vídeo mostra cada etapa de um pagamento com Mobile Money. Tudo se faz em poucos minutos, a partir do telemóvel. Também pode pagar com cartão bancário.</p>
+      </div>
+
+      <figure class="howto-media">
+        <div class="howto-frame">
+          <video controls playsinline preload="none" width="720" height="1280" poster="assets/img/como-pagar-poster.jpg" aria-label="Vídeo: como pagar o livro, passo a passo">
+            <source src="assets/video/como-pagar.mp4" type="video/mp4">
+            <a href="assets/video/como-pagar.mp4">Ver o vídeo: como pagar o livro</a>
+          </video>
+        </div>
+        <figcaption>Vídeo de 53 segundos · 2 MB</figcaption>
+      </figure>
+
+      <div class="howto-body flow">
+        <div class="howto-actions">
+          <a class="btn btn-gold btn-lg btn-shine" href="#oferta" data-cta data-cta-main>
+            <span class="btn-main">Obter o livro agora <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            <span class="btn-sub">Pagamento seguro · Download imediato</span>
+          </a>
+          <a class="btn btn-whatsapp" href="https://wa.me/243823226790" data-whatsapp="Olá Library Online, preciso de ajuda para pagar o livro Como Preparar Mensagens Bíblicas." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Ajuda para pagar no WhatsApp</a>
+        </div>
+        <div class="faq-list howto-text">
+          <details>
+            <summary>Prefere ler? Os passos do vídeo por escrito</summary>
+            <div class="faq-answer">
+              <ol class="howto-list">
+                <li><strong>Obter o livro.</strong> Clique em «Obter o livro agora».</li>
+                <li><strong>Preencher o formulário.</strong> Nome, apelido, e-mail e telemóvel (WhatsApp). Confirme bem o seu e-mail!</li>
+                <li><strong>Pagar agora.</strong> Clique em «Pagar agora» e aguarde um instante.</li>
+                <li><strong>Escolher a moeda.</strong> A moeda do seu país ou dólares.</li>
+                <li><strong>Escolher o método de pagamento.</strong> Mobile Money (Orange Money, Airtel Money, <span class="nowrap">M-Pesa</span>…) ou cartão bancário.</li>
+                <li><strong>Introduzir o número.</strong> Introduza o número da sua conta Mobile Money e clique em «Continuar».</li>
+                <li><strong>Aguardar um instante.</strong> Vai chegar ao seu telemóvel uma mensagem do seu operador.</li>
+                <li><strong>Introduzir o código secreto.</strong> Na mensagem, introduza o seu código secreto e confirme.</li>
+                <li><strong>Confirmar a mensagem.</strong> Uma mensagem confirma o pagamento: clique em «OK».</li>
+                <li><strong>Pagamento recebido.</strong> Aguarde: está a ser redirecionado para a loja.</li>
+                <li><strong>Transferir o livro.</strong> Compra confirmada: clique em «Transferir» para obter o seu livro.</li>
+                <li><strong>Boa leitura!</strong> O seu livro foi transferido.</li>
+              </ol>
+            </div>
+          </details>
+        </div>
       </div>
     </div>
   </section>

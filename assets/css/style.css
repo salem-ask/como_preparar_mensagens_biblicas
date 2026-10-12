@@ -33,6 +33,7 @@
   --on-dark-faint: #9db3a8;
   --line: #e6dccd;
   --line-dark: #2c5446;
+  --video-bg: #0b163e;    /* backdrop of the how-to-pay video, shown while it loads */
 
   /* Type */
   --font-display: "Libre Caslon Text", Georgia, "Times New Roman", serif;
@@ -159,6 +160,7 @@ h1, h2, h3 {
 .section-head { max-width: var(--narrow); }
 
 .small { font-size: var(--fs-sm); color: var(--ink-soft); }
+.nowrap { white-space: nowrap; }
 
 /* ---------- Buttons ---------- */
 
@@ -745,6 +747,12 @@ h1, h2, h3 {
 .help { background: var(--sand); }
 .help-box { align-items: flex-start; }
 .help-box .lead { color: var(--ink-warm); }
+.help-actions { display: flex; flex-wrap: wrap; gap: .75rem; width: 100%; }
+.help-actions .btn { width: 100%; }
+.help-actions .btn-outline { min-height: 52px; padding: .8rem 1.3rem; font-size: 1.0625rem; }
+@media (min-width: 560px) {
+  .help-actions .btn { width: auto; }
+}
 .help-contact { font-size: var(--fs-sm); color: var(--ink-warm); }
 .help-contact a { color: var(--forest); font-weight: 700; }
 
@@ -778,23 +786,49 @@ h1, h2, h3 {
 .faq-list details[open] summary::after { transform: translateY(-25%) rotate(-135deg); }
 .faq-answer { display: flex; flex-direction: column; gap: .6rem; padding-bottom: 1.2rem; color: var(--ink-soft); }
 
-/* ---------- Free books group ---------- */
+/* ---------- How to pay (video) ----------
+   Mobile: title, video, buttons. Wide screens: the vertical video stands on
+   the right and the text sits beside it, centred on its height. */
 
-.group { background: var(--paper-warm); }
-.group-box { display: grid; gap: 1.25rem; align-items: start; }
-.group-box .btn { align-self: flex-start; }
-.group-mark {
+.howto { background: var(--paper-warm); }
+.howto-grid {
   display: grid;
-  place-items: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: var(--whatsapp);
-  color: var(--white);
+  grid-template-areas: "head" "video" "body";
+  gap: 2rem;
 }
-.group-mark svg { width: 30px; height: 30px; }
-@media (min-width: 760px) {
-  .group-box { grid-template-columns: auto minmax(0, 1fr); gap: 2rem; }
+.howto-head { grid-area: head; }
+.howto-body { grid-area: body; }
+.howto-media { grid-area: video; justify-self: center; width: min(100%, 300px); }
+.howto-frame {
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 20px;
+  background: var(--video-bg);
+  box-shadow: var(--shadow);
+}
+.howto-frame video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; }
+.howto-media figcaption { margin-top: .75rem; text-align: center; font-size: var(--fs-xs); color: var(--ink-soft); }
+.howto-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+.howto-actions .btn { width: 100%; }
+.howto-text summary { font-size: 1.0625rem; }
+.howto-list { display: grid; gap: .45rem; padding-left: 1.85rem; }
+.howto-list li { padding-left: .2rem; }
+.howto-list li::marker { color: var(--green); font-weight: 700; }
+.howto-list strong { color: var(--forest); }
+
+@media (min-width: 560px) {
+  .howto-actions .btn { width: auto; }
+}
+@media (min-width: 900px) {
+  .howto-grid {
+    grid-template-columns: minmax(0, 1fr) 340px;
+    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-areas: ". video" "head video" "body video" ". video";
+    column-gap: clamp(3rem, 6vw, 5rem);
+    row-gap: 0;
+  }
+  .howto-media { width: 100%; }
+  .howto-body { margin-top: 2rem; }
 }
 
 /* ---------- Final call ---------- */
