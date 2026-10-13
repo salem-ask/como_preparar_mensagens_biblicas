@@ -7,9 +7,8 @@
 
 window.FUNNEL_CONFIG = {
   /* Lien de paiement de tous les boutons « Obter o livro ».
-     À REMPLIR : collez ici le lien de paiement du livre en portugais.
-     Tant qu'il est vide, les boutons mènent à l'encadré de l'offre. */
-  checkoutUrl: "",
+     Vide = les boutons mènent à l'encadré de l'offre. */
+  checkoutUrl: "https://zduwupew.mychariow.shop/prd_tue0j7/checkout",
 
   /* Prix affichés, en dollars. Le visiteur peut payer dans sa monnaie. */
   price: "7 USD",
@@ -25,9 +24,6 @@ window.FUNNEL_CONFIG = {
      qui n'est jamais écrit sur la page. */
   whatsappNumber: "243823226790",           // format international, chiffres seulement
   email: "libraryonline65@gmail.com",
-
-  /* Groupe WhatsApp des livres chrétiens gratuits */
-  whatsappGroupUrl: "https://chat.whatsapp.com/DRFUqxZkOjX3fzXEaGObV3?s=cl&p=a&mlu=4&ilr=4",
 
   /* Autres liens */
   booklineUrl: "https://bookline.digital",
