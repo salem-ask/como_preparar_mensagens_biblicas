@@ -14,7 +14,7 @@ En bas de la page de vente, la section **« Como pagar? »** montre en vidéo (5
 
 ## Lien de paiement et page de remerciement
 
-- **Lien de paiement** (`checkoutUrl` dans `assets/js/config.js`) : `https://zduwupew.mychariow.shop/prd_tue0j7/checkout`. Tous les boutons « Obter o livro » y mènent.
+- **Lien de paiement** (`checkoutUrl` dans `assets/js/config.js`) : `https://xzjdbavw.mychariow.co/prd_fytf63qy/checkout`. Tous les boutons « Obter o livro » y mènent.
 - **Prix affichés** : `7 USD` au lieu de `11 USD` (-40 %). Gardez-les en accord avec le prix du produit dans la boutique (`price`, `oldPrice`, `discount`).
 - **Page de remerciement** : dans la boutique, collez `https://mensagensbiblicas.bookline.digital/obrigado.html` comme redirection après achat.
 
@@ -24,7 +24,7 @@ Tout se règle dans **`assets/js/config.js`** :
 
 | Réglage | Valeur actuelle |
 | --- | --- |
-| `checkoutUrl` | `https://zduwupew.mychariow.shop/prd_tue0j7/checkout` |
+| `checkoutUrl` | `https://xzjdbavw.mychariow.co/prd_fytf63qy/checkout` |
 | `price` / `oldPrice` / `discount` | `7 USD` / `11 USD` / `-40%` |
 | `offerHours` / `offerStart` | `48` / `2026-10-11T00:00:00+01:00` (même cycle que le tunnel anglais) |
 | `whatsappNumber` | `243823226790` (sert aux boutons, jamais écrit sur la page) |

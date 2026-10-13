@@ -8,7 +8,7 @@
 window.FUNNEL_CONFIG = {
   /* Lien de paiement de tous les boutons « Obter o livro ».
      Vide = les boutons mènent à l'encadré de l'offre. */
-  checkoutUrl: "https://zduwupew.mychariow.shop/prd_tue0j7/checkout",
+  checkoutUrl: "https://xzjdbavw.mychariow.co/prd_fytf63qy/checkout",
 
   /* Prix affichés, en dollars. Le visiteur peut payer dans sa monnaie. */
   price: "7 USD",
