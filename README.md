@@ -47,7 +47,7 @@ Même pixel que le tunnel anglais. La page envoie `PageView` et `ViewContent`, p
 - Aucun numéro de téléphone n'y est lisible : le numéro WhatsApp de l'étape 11 et le numéro d'exemple tapé aux étapes 2 à 6 sont floutés, ainsi que deux notifications du téléphone (solde du compte, alerte de vente).
 - Image d'aperçu : `assets/img/como-pagar-poster.jpg` (l'étape 5, le choix du moyen de paiement).
 - La vidéo ne se télécharge que si le visiteur appuie sur lecture : la page reste rapide.
-- Pour la changer, remplacez ces deux fichiers en gardant les mêmes noms (vidéo verticale MP4, de préférence moins de 5 Mo), puis mettez à jour la durée et le poids écrits sous la vidéo dans `index.html` (« Vídeo de 53 segundos · 2 MB »).
+- Pour la changer, remplacez ces deux fichiers en gardant les mêmes noms (vidéo verticale MP4, de préférence moins de 5 Mo), mettez à jour la durée et le poids écrits sous la vidéo dans `index.html` (« Vídeo de 53 segundos · 2 MB ») et augmentez le numéro `?v=2` de leurs deux adresses, pour que les téléphones ne gardent pas l'ancienne version en mémoire.
 
 ## Langue
 
