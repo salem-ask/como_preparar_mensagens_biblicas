@@ -43,7 +43,8 @@ Même pixel que le tunnel anglais. La page envoie `PageView` et `ViewContent`, p
 ## Vidéo « Como pagar? »
 
 - Fichier : `assets/video/como-pagar.mp4` (720 × 1280, 53 secondes, 2 Mo). C'est la vidéo envoyée, compressée pour les petits forfaits internet (5,8 Mo à l'origine), sans perte visible de netteté.
-- Aucun numéro de téléphone n'y est lisible : le numéro WhatsApp de l'étape 11 et le numéro d'exemple tapé aux étapes 2 à 6 sont floutés.
+- L'interface de paiement filmée est traduite en portugais (boutons, formulaires, messages de l'opérateur, page de confirmation). Le titre, la description et les pages du livre d'exemple (*Christianisme pour les débutants*, un livre français) restent tels quels.
+- Aucun numéro de téléphone n'y est lisible : le numéro WhatsApp de l'étape 11 et le numéro d'exemple tapé aux étapes 2 à 6 sont floutés, ainsi que deux notifications du téléphone (solde du compte, alerte de vente).
 - Image d'aperçu : `assets/img/como-pagar-poster.jpg` (l'étape 5, le choix du moyen de paiement).
 - La vidéo ne se télécharge que si le visiteur appuie sur lecture : la page reste rapide.
 - Pour la changer, remplacez ces deux fichiers en gardant les mêmes noms (vidéo verticale MP4, de préférence moins de 5 Mo), puis mettez à jour la durée et le poids écrits sous la vidéo dans `index.html` (« Vídeo de 53 segundos · 2 MB »).
