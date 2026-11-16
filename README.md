@@ -10,7 +10,9 @@ Tunnel de vente en portugais (Portugal) pour le livre *Como Preparar Mensagens B
 2. **Paiement** : Mobile Money ou carte, dans la monnaie du client. La boutique livre le PDF.
 3. **`obrigado.html`** : la page de remerciement. Elle donne les étapes de téléchargement, l'aide WhatsApp, une recommandation (*Homilética: Como Pregar com Eficácia*) et un lien vers bookline.digital.
 
-En bas de la page de vente, la section **« Como pagar? »** montre en vidéo (53 secondes) comment payer, étape par étape, avec un bouton d'achat, un bouton d'aide WhatsApp et les étapes par écrit pour ceux qui préfèrent lire. La section « Não sabe como pagar? » et la FAQ y renvoient.
+En bas de la page de vente, la section **« Como pagar? »** montre en vidéo (53 secondes) comment payer, étape par étape, avec un bouton d'achat, un bouton d'aide WhatsApp et les étapes par écrit pour ceux qui préfèrent lire. La section « Não sabe como pagar? » et la FAQ y renvoient. **Elle est masquée pour l'instant** : pour la réafficher, passez `showPaymentVideo` à `true` dans `assets/js/config.js` (la section et ses deux liens reviennent ensemble).
+
+La barre d'achat qui apparaît en bas de l'écran pendant la lecture montre le prix et le bouton « Obter o livro » (sans bouton WhatsApp).
 
 ## Lien de paiement et page de remerciement
 
@@ -41,6 +43,8 @@ Le site est fait de fichiers simples (HTML, CSS, JS, images, vidéo). Hostinger 
 Même pixel que le tunnel anglais. La page envoie `PageView` et `ViewContent`, puis `AddToCart` au clic sur un bouton d'achat. L'achat (`Purchase`) est compté par la boutique quand le même pixel y est réglé : la page de remerciement ne l'envoie que si `sendPurchase` vaut `true`.
 
 ## Vidéo « Como pagar? »
+
+- Masquée pour l'instant (`showPaymentVideo: false` dans `assets/js/config.js`).
 
 - Fichier : `assets/video/como-pagar.mp4` (720 × 1280, 53 secondes, 2 Mo). C'est la vidéo envoyée, compressée pour les petits forfaits internet (5,8 Mo à l'origine), sans perte visible de netteté.
 - L'interface de paiement filmée est traduite en portugais (boutons, formulaires, messages de l'opérateur, page de confirmation). Le titre, la description et les pages du livre d'exemple (*Christianisme pour les débutants*, un livre français) restent tels quels.

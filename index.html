@@ -331,7 +331,7 @@
       <p class="lead">Compreendemos. Envie-nos uma mensagem por WhatsApp antes de pagar. Uma pessoa real da Library Online responde às suas perguntas e acompanha-o no pagamento, passo a passo.</p>
       <div class="help-actions">
         <a class="btn btn-whatsapp" href="https://wa.me/243823226790" data-whatsapp="Olá Library Online, tenho uma pergunta sobre o livro Como Preparar Mensagens Bíblicas." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Fale connosco no WhatsApp</a>
-        <a class="btn btn-outline" href="#como-pagar"><svg aria-hidden="true"><use href="#i-play"/></svg>Ver o vídeo: como pagar</a>
+        <a class="btn btn-outline" href="#como-pagar" data-payment-video hidden><svg aria-hidden="true"><use href="#i-play"/></svg>Ver o vídeo: como pagar</a>
       </div>
       <p class="help-contact">Prefere e-mail? Escreva para <a href="mailto:libraryonline65@gmail.com" data-email>libraryonline65@gmail.com</a></p>
     </div>
@@ -351,7 +351,7 @@
         </details>
         <details>
           <summary>Como posso pagar?</summary>
-          <div class="faq-answer"><p>Com Mobile Money ou cartão bancário. Pode pagar a partir de Angola, Moçambique, Portugal, Brasil, Cabo Verde e de muitos outros países. No fim desta página, um <a href="#como-pagar">vídeo de 1 minuto</a> mostra o pagamento passo a passo.</p></div>
+          <div class="faq-answer"><p>Com Mobile Money ou cartão bancário. Pode pagar a partir de Angola, Moçambique, Portugal, Brasil, Cabo Verde e de muitos outros países.<span data-payment-video hidden> No fim desta página, um <a href="#como-pagar">vídeo de 1 minuto</a> mostra o pagamento passo a passo.</span></p></div>
         </details>
         <details>
           <summary>Tenho de pagar em dólares?</summary>
@@ -424,7 +424,7 @@
   </section>
 
   <!-- How to pay: the step-by-step video -->
-  <section class="section howto" id="como-pagar" aria-labelledby="howto-title">
+  <section class="section howto" id="como-pagar" aria-labelledby="howto-title" data-payment-video hidden>
     <div class="wrap howto-grid">
       <div class="howto-head flow">
         <p class="eyebrow">Pagamento passo a passo</p>
@@ -434,7 +434,7 @@
 
       <figure class="howto-media">
         <div class="howto-frame">
-          <video controls playsinline preload="none" width="720" height="1280" poster="assets/img/como-pagar-poster.jpg?v=2" aria-label="Vídeo: como pagar o livro, passo a passo">
+          <video controls playsinline preload="none" width="720" height="1280" data-poster="assets/img/como-pagar-poster.jpg?v=2" aria-label="Vídeo: como pagar o livro, passo a passo">
             <source src="assets/video/como-pagar.mp4?v=2" type="video/mp4">
             <a href="assets/video/como-pagar.mp4?v=2">Ver o vídeo: como pagar o livro</a>
           </video>
@@ -493,7 +493,6 @@
 <div class="sticky-cta" id="sticky-cta">
   <div class="sticky-inner">
     <p class="sticky-price"><s data-text="oldPrice">11 USD</s><strong data-text="price">7 USD</strong></p>
-    <a class="sticky-wa" href="https://wa.me/243823226790" data-whatsapp="Olá Library Online, tenho uma pergunta sobre o livro Como Preparar Mensagens Bíblicas." target="_blank" rel="noopener" aria-label="Fale connosco no WhatsApp"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
     <a class="btn btn-gold" href="#oferta" data-cta>Obter o livro <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
   </div>
 </div>

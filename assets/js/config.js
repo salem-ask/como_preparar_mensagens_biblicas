@@ -10,6 +10,10 @@ window.FUNNEL_CONFIG = {
      Vide = les boutons mènent à l'encadré de l'offre. */
   checkoutUrl: "https://xzjdbavw.mychariow.co/prd_fytf63qy/checkout",
 
+  /* Vidéo « Como pagar? » en bas de la page de vente, et les deux liens qui y mènent.
+     false = masquée ; true = affichée. */
+  showPaymentVideo: false,
+
   /* Prix affichés, en dollars. Le visiteur peut payer dans sa monnaie. */
   price: "7 USD",
   oldPrice: "11 USD",

@@ -48,6 +48,13 @@
 
   each("[data-year]", function (el) { el.textContent = String(new Date().getFullYear()); });
 
+  // The "how to pay" video and the links to it stay hidden unless showPaymentVideo is true.
+  if (C.showPaymentVideo) {
+    each("[data-payment-video]", function (el) { el.hidden = false; });
+    // The preview image loads only when the video is shown.
+    each("video[data-poster]", function (v) { v.poster = v.getAttribute("data-poster"); });
+  }
+
   /* ---------- Offer countdown ----------
      Cycles of offerHours counted from offerStart: when one ends, the next
      one starts, and every visitor sees the same time left. */
